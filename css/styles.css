@@ -55,6 +55,8 @@ body {
 	padding-right: 15px;
 
 	width: 1200px;
+
+	outline: 1px solid red;
 }
 
 .section {
@@ -563,7 +565,8 @@ button {
 	margin-bottom: 9px;
 }
 
-.pre-footer-soc-links {
+.pre-footer-soc-links,
+.footer-subscr-text {
 	margin-bottom: 20px;
 
 	font-style: normal;
@@ -596,6 +599,62 @@ button {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
 	background-color: #2196f3;
+}
+
+/* -------------------ПІДПИС НА РОЗCИЛКУ---------------- */
+
+.submit-btn {
+	display: flex;
+	min-width: 200px;
+	align-items: center;
+	text-align: center;
+	padding: 10px 28px;
+	margin-left: 12px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+
+	color: var(--accent-button-color);
+
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-icon {
+	margin-left: 10px;
+}
+
+.footer-subscr-box {
+	margin-left: auto;
+
+	outline: 1px solid red;
+}
+
+.footer-form {
+	position: relative;
+	display: flex;
+}
+.form {
+}
+.form-subscr {
+	position: relative;
+}
+.form-subscr-input {
+	width: 358px;
+	height: 50px;
+
+	font-size: 16px;
+	line-height: 1.25;
+	/* identical to box height, or 125% */
+
+	color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+
+	background-color: transparent;
 }
 
 /* ПОРТФОЛІО */
@@ -795,6 +854,8 @@ button {
 	width: 528px;
 	height: 581px;
 
+	padding: 40px;
+
 	background-color: var(--main-background-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -807,26 +868,52 @@ button {
 	top: 8px;
 	right: 8px;
 
+	display: flex;
+
 	width: 30px;
 	height: 30px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 
+	justify-content: center;
+	align-items: center;
+
 	background-color: var(--main-background-color);
 }
 
-.modal-btn::before {
-	position: absolute;
-	content: "";
+.modal-form {
+}
+.modal-form-field {
+	display: flex;
+	flex-direction: column;
+}
+.modal-form-input {
+	width: 100%;
+	height: 40px;
 
-	top: 50%;
-	left: 50%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
 
-	transform: translate(-50%, -50%);
+.modal-text {
+	text-align: center;
+	margin: 0 auto 30px;
+	margin-left: auto;
+	margin-right: auto;
 
-	background-image: url(../images/close-1.svg);
-	width: 18px;
-	height: 18px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	color: var(--title-text-color);
+
+	outline: 1px solid blue;
+}
+
+.modal-form-field,
+.pre-footer-soc-links {
+	outline: 1px solid red;
+}
+
+.modal-form-field label {
+	margin-bottom: 4px;
 }
