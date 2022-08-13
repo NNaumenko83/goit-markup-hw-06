@@ -567,13 +567,11 @@ button {
 .footer-subscr-text {
 	margin-bottom: 20px;
 
-	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 
-	color: #ffffff;
+	color: var(--third-text-color);
 }
 
 .footer-soc-link-item .link {
@@ -584,7 +582,7 @@ button {
 	width: 100%;
 	height: 100%;
 
-	color: #ffffff;
+	color: var(--third-text-color);
 
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
@@ -632,11 +630,11 @@ button {
 	position: relative;
 	display: flex;
 }
-.form {
-}
+
 .form-subscr {
 	position: relative;
 }
+
 .form-subscr-input {
 	width: 358px;
 	height: 50px;
@@ -644,10 +642,11 @@ button {
 
 	font-size: 16px;
 	line-height: 1.25;
+	letter-spacing: 0.03em;
 
 	color: rgba(255, 255, 255, 0.6);
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 
 	background-color: transparent;
@@ -658,10 +657,8 @@ button {
 
 	cursor: pointer;
 }
-}
 
 .form-subscr-input::placeholder {
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.25;
 	letter-spacing: 0.03em;
@@ -958,9 +955,7 @@ button {
 
 .modal-text {
 	text-align: center;
-	margin: 0 auto 12px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-bottom: 12px;
 
 	font-weight: 700;
 	font-size: 20px;
@@ -990,10 +985,9 @@ button {
 
 .modal-form-field textarea::placeholder {
 	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
+
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 1.17;
 	letter-spacing: 0.01em;
 
 	color: rgba(117, 117, 117, 0.5);
@@ -1046,8 +1040,6 @@ button {
 	transition-property: border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 /* Checked */
