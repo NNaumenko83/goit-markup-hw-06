@@ -978,6 +978,11 @@ button {
 	resize: none;
 }
 
+.modal-comment:hover,
+.modal-comment:focus {
+	border-color: var(--accent-color);
+}
+
 .modal-form-field textarea::placeholder {
 	font-family: "Roboto";
 
